@@ -6,7 +6,7 @@ function start() {
     welcomeImg=new Image();
     //welcomeImg.src='./img/hello_world.png';
     ctx.drawImage(welcomeImg,0,0);
-    //canvas.addEventListener("click",display, false);
+    canvas.addEventListener("click",display, false);
 }
 start();
 
