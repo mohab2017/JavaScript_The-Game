@@ -10,16 +10,16 @@ var paddle=function (paddleWidth,paddleHeight,paddleX) {
 
             paddleWidth = paddleWidth
         }     
-    })
+    });
 
     Object.defineProperty(this,'paddleHeight',{
         get: function(){
 
-            return paddleHeight 
+            return paddleHeight; 
         },
-        set: function(paddleHeight){            
+        set: function(){            
 
-            paddleHeight = paddleHeight;
+            paddleHeight = 10;
         }     
     });
 
@@ -28,9 +28,9 @@ var paddle=function (paddleWidth,paddleHeight,paddleX) {
 
             return paddleX 
         },
-        set: function(paddleX){            
+        set: function(){            
 
-            paddleX =paddleX 
+            paddleX = (canvas.width-paddleWidth)/2
         }     
     });
 
@@ -48,4 +48,3 @@ paddle.prototype.drawPaddle = function(){
     ctx.fill();
     ctx.closePath();
 }
-
