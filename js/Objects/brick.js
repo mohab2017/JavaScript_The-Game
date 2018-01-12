@@ -1,8 +1,8 @@
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-canvas.width='1200';
-canvas.height='500';
+//canvas.width='1200';
+//canvas.height='500';
 var bricks = [];
 var brickShape;
 var brick = function ()
