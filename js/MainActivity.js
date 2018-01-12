@@ -1,5 +1,6 @@
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
+var scriptType=document.getElementById("myScript");
     welcomeImg=new Image();
     welcomeImg.src='img/c.jpg';
     welcomeImg.onload = function(){
@@ -14,6 +15,7 @@ let ctx = canvas.getContext("2d");
   function display()
 {
   ctx.clearRect(0,0,canvas.width,canvas.height);
+  scriptType.src="js/menu.js";
 } 
 
 
