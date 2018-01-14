@@ -12,10 +12,10 @@ var scriptType=document.getElementById("myScript");
 };
 
     canvas.addEventListener("click",display);
-     scriptType.src="js/menu.js";
   function display()
 {
   ctx.clearRect(0,0,canvas.width,canvas.height);
+  scriptType.src="js/menu.js";
 
 } 
 
